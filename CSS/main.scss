@@ -9,10 +9,20 @@
 	//font-size: 62.5%;
 	margin: 0;
 	padding: 0;
+
+	font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+html {
+	width: 100%;
+	height: 100%;
 }
 body {
 	position: relative;
 	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
 }
 ::selection {
 	background-color: var(--clr-primary-yellow-100);
@@ -94,33 +104,6 @@ h1 {
 	text-transform: uppercase;
 	user-select: none;
 	line-height: 200px;
-
-	span {
-		display: block;
-		&:nth-child(1) {
-			text-align: center;
-			margin-left: 0px;
-		}
-		&:nth-child(2) {
-			text-align: right;
-			margin-right: 0px;
-		}
-		&:nth-child(3) {
-			text-align: left;
-		}
-		&:nth-child(4) {
-			text-align: right;
-			margin-right: 120px;
-		}
-		&:nth-child(5) {
-			text-align: center;
-		}
-	}
-	.heading-span-outline {
-		-webkit-text-stroke: 3px;
-		-webkit-text-fill-color: transparent;
-		-webkit-text-stroke-color: var(--clr-neutral-black-400) !important;
-	}
 }
 
 h4,
@@ -128,4 +111,8 @@ h4 a {
 	font-size: var(--fs-200) !important;
 	font-weight: var(--wgt-500) !important;
 	color: var(--clr-neutral-black-400) !important;
+}
+
+.section {
+	height: 100vh;
 }

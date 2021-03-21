@@ -6,7 +6,7 @@ $break-point: (
 
 @mixin mq($key) {
 	$size: map-get($break-point, $key);
-	@media screen and(min-width: $size) {
+	@media screen and(max-width: $size) {
 		@content;
 	}
 }

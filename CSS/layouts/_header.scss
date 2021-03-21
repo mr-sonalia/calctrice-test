@@ -1,66 +1,33 @@
-main {
-	width: 100%;
-	height: 100%;
-
-	.landingPage {
-		.CTA {
-			display: grid;
-		}
-
-		.CTA-headline,
-		.CTA-button {
-			place-items: center;
-			position: relative;
-
-			.circle {
-				background-color: transparent;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				z-index: -1;
-				width: clamp(200px, 550px, 800px);
-				height: clamp(200px, 550px, 800px);
-				border-radius: 50%;
-				border: 2px solid var(--clr-primary-yellow-200);
-				mix-blend-mode: darken;
-			}
-		}
-		.CTA-articles {
-			place-items: flex-end center;
-
-			h4 {
-				//padding-top: 50px;
-				cursor: pointer;
-			}
-		}
-	}
-}
-@media screen and(max-width:768px) {
-	main {
-		width: 100%;
-		height: 100%;
-
-		.landingPage {
-			.CTA {
-			}
-
-			.CTA-headline {
-				margin-top: 30px;
-				.circle {
-					width: 350px;
-					height: 350px;
-					transform: translate(-50%, -50%);
+.landingPage {
+	.heroSection {
+		.heroHeadline {
+			span {
+				display: block;
+				&:nth-child(1) {
+					text-align: center;
+					margin-left: 0px;
+				}
+				&:nth-child(2) {
+					text-align: right;
+					margin-right: 0px;
+				}
+				&:nth-child(3) {
+					text-align: left;
+				}
+				&:nth-child(4) {
+					text-align: right;
+					margin-right: 120px;
+				}
+				&:nth-child(5) {
+					text-align: center;
 				}
 			}
-
-			.CTA-button {
-				margin-top: 100px;
-			}
-			.CTA-articles {
-				h4 {
-					padding-top: 50px;
-				}
+			.heading-span-outline {
+				-webkit-text-stroke: 3px;
+				-webkit-text-fill-color: transparent;
+				-webkit-text-stroke-color: var(
+					--clr-neutral-black-400
+				) !important;
 			}
 		}
 	}

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CalcTrice</title>
 		<link rel="stylesheet" href="CSS/main.css" />
-		<link
-			rel="stylesheet"
-			href="CSS/vendors/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css"
-		/>
+		<link rel="stylesheet" href="CSS/vendors/Bootstrap/css/bootstrap.min.css">
+		
 		
 		<script defer src="JS/main.js"></script>
+		
+	</head>
 	<body>
 		<svg
 			id="cursor-svg"
@@ -40,55 +40,54 @@
 				</textPath>
 			</text>
 		</svg>
-		<nav class="navbar">
-				<div class="logo"></div>
-				<ul>
-					<li><a href="#" class="nav-link cursor-text">About</a></li>
-					<li><a href="#" class="nav-link cursor-text">Services</a></li>
-					<li><a href="#" class="nav-link cursor-text">Contact Us</a></li>
-					<li><a href="#" class="nav-link cursor-text">Future Updates</a></li>
-				</ul>
-			</nav>
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+			  <div class="navbar-brand" href="#">CALCTRICE</div>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+				  <a class="nav-link " aria-current="page" href="#">Home</a>
+				  <a class="nav-link" href="#">Features</a>
+				  <a class="nav-link" href="#">Pricing</a>
+				 
+			  </div>
+			</div>
+		  </nav>
 		
-		<div class="container-fluid">
-			<main>
-				<div class="row landingPage">
-					
-					<div class="col-md-0 col-sm-0"></div>
-					<div class="col-lg-8 col-md-12 col-sm-12 CTA CTA-headline">
-						<div class="circle"></div>
-						<h1 class="heading">
-							<span class="heading-span-solid">Making</span>
-							<span class="heading-span-solid">Complex</span>
-							<span class="heading-span-outline"
-								>Calculations</span
-							>
-							<span class="heading-span-solid">Easy</span>
-							<span class="heading-span-outline">For You.</span>
-						</h1>
-						
-					</div>
-					<div class="col-lg-2 col-md-12 col-sm-12 CTA CTA-button">
-						<button class="button button--major-action-btn">
-							<span>Explore Now</span>
-							<div class="marquee" aria-hidden="true">
-								<div class="marquee__inner">
-									<span>Explore Now</span>
-									<span>Explore Now</span>
-									<span>Explore Now</span>
-									<span>Explore Now</span>
-								</div>
-							</div>
-						</button>
-					</div>
-					<div class="col-lg-2 col-md-12 col-sm-12 CTA CTA-articles">
-						<h4><a href="#">Click To Read Articles</a></h4>
-					</div>
-				</div>
-			</main>
-			
+		<div id="fullPage" class="container-fluid landingPage">
+			<section class="section row heroSection">
+				<div class="col-xs-0 col-sm-0 col-md-1 col-lg-2"></div>	
+				<div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 ">
+					<h1 class="heroHeadline">
+						<span class="heading-span-regular">Making</span>
+						<span class="heading-span-regular">Complex</span>
+						<span class="heading-span-outline">Calculations</span>
+						<span class="heading-span-regular">Easy</span>
+						<span class="heading-span-outline">For You.</span>
+					</h1>
+				</div>	
+				<div class="col-xs-0 col-sm-0 col-md-1 col-lg-2"></div>	
+			</section>
+
+			<section class="section row heroSection">
+				<div class="col-xs-0 col-sm-0 col-md-1 col-lg-2"></div>	
+				<div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 ">
+					<h1 class="heroHeadline">
+						<span class="heading-span-regular">Making</span>
+						<span class="heading-span-regular">Complex</span>
+						<span class="heading-span-outline">Calculations</span>
+						<span class="heading-span-regular">Easy</span>
+						<span class="heading-span-outline">For You.</span>
+					</h1>
+				</div>	
+				<div class="col-xs-0 col-sm-0 col-md-1 col-lg-2"></div>	
+			</section>
 		</div>
 		
-		<!-- <script src="CSS/vendors/bootstrap-5.0.0-beta2-dist/js/bootstrap.js"></script> -->
+		<script src="CSS/vendors/Bootstrap/js/bootstrap.min.js"></script>
+		
+		<script defer src="JS/stylingVendor.js"></script>
 	</body>
 </html>
